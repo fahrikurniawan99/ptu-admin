@@ -3,5 +3,5 @@ export type Category = {
   icon: string | null;
   slug: string;
   id: number;
-  masterId: string;
+  masterId: number;
 };

@@ -1,6 +1,5 @@
 import api from "@/api";
 import config from "@/config";
-import { Category } from "@/types/category";
 import { MasterApiResponse, MasterCategory } from "@/types/response";
 import useSWR from "swr";
 
@@ -24,5 +23,5 @@ export default function useMasterCategory() {
     fetcher
   );
 
-  return { category: data, error, isLoading, isValidating, mutate };
+  return { masterCategory: data, error, isLoading, isValidating, mutate };
 }
